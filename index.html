@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de ALUNOS</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Cadastro de Alunos</h1>
+
+    <form id="formAluno">
+
+        <input type="hidden" id="id">
+
+        <input type="text" id="nome" placeholder="Nome completo do aluno" required>
+        <input type="text" id="cusro" placeholder="Curso" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+
+        <button type="submit">Salvar</button>
+
+        <h2>Alunos Cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Curso</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+        </table>
+
+        <tbody id="listaAlunos">
+
+
+        </tbody>
+    </form>
+
+</body>
+
+</html>
